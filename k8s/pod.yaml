@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   labels:
     app.kubernetes.io/instance: matopenkw-infra
-  name: sample2-pod
+  name: sample3-pod
 spec:
   containers:
     - image: 'nginx:1.16'
