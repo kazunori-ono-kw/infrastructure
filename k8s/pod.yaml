@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app.kubernetes.io/instance: matopenkw-infra
+  name: sample2-pod
+spec:
+  containers:
+    - image: 'nginx:1.16'
+      name: nginx-container
