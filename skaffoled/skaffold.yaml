@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2beta9
+kind: Config
+metadata:
+  name: skaffoled
+build:
+  artifacts:
+  - image: go-test
+deploy:
+  kubectl:
+    manifests:
+    - deployment.yaml
+    - service.yaml
