@@ -9,6 +9,6 @@ spec:
       containers:
       - name: tool-container
         image: amsy810/tools:v2.0
-        command: ["echo", "hello"]
+        command: ["echo", "hello2"]
       restartPolicy: Never
 
