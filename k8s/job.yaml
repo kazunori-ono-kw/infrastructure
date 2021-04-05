@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: myjob
+spec:
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      containers:
+      - name: tool-container
+        image: amsy810/tools:v2.0
+        command: ["echo", "hello"]
+      restartPolicy: Never
+
